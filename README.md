@@ -65,4 +65,3 @@ ZORO.to is a responsive anime streaming web app built using the MERN stack. It a
 
 
 <img width="1920" height="1080" alt="Screenshot 2025-07-12 021547" src="https://github.com/user-attachments/assets/2708dd6f-6bbd-4837-b67d-bb7398fa7e94" />
-

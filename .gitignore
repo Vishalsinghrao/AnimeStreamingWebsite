@@ -1,16 +1,4 @@
-# Ignore media files globally
-*.jpg
-*.jpeg
-*.png
-*.avif
-*.webp
-*.gif
-*.mp4
-*.svg
-*.mkv
 
-# Ignore specific folders
-client/public/
 
 # === Ignore built files ===
 build/
@@ -19,8 +7,6 @@ dist/
 # === Ignore client-specific files ===
 client/node_modules/
 client/.env
-client/public/*.jpg
-client/public/*.png
 client/src/assets/
 
 # === Ignore server-specific files ===
@@ -32,3 +18,6 @@ server/temp/
 # === Root-level ===
 node_modules/
 .env
+
+
+.vite/

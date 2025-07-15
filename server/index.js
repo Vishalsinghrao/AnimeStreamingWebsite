@@ -39,7 +39,7 @@ app.get('/api/anime', async (req, res) => {
 
 
 app.get('/video', (req, res) => {
-  const filepath = `${__dirname}/public/American-Psycho.mp4`;
+  const filepath = `${__dirname}/public/one-piece-ep1.mp4`;
 
   const range = req.headers.range;
   const stat = statSync(filepath);
