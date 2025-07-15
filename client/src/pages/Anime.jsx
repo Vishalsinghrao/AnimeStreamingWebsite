@@ -1,7 +1,6 @@
 import React from 'react'
 import CardSlider from '../components/CardSlider'
 import Smallcard from '../components/Smallcard'
-import Footer from '../components/Footer'
 import { useEffect,useState } from 'react'
 import axios from 'axios'
 

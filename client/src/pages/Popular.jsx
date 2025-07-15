@@ -1,6 +1,5 @@
 import React from 'react'
 import Smallcard from '../components/Smallcard'
-import Footer from '../components/Footer'
 
 
 

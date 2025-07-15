@@ -4,7 +4,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './CardSlider.css'; 
-import AnimeCard from './AnimeCard';
+import AnimeCard from './Animecard';
 
 const CardSlider = ({ data }) => {
   return (
