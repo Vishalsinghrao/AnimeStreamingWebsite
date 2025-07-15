@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../components/Card'
-import Details from '../components/details'
+import Details from '../components/Details'
 
 
 const Home = () => {
