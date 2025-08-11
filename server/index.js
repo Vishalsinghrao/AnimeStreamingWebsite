@@ -18,6 +18,7 @@ app.use(cors({
 app.use(cookieParser());
 app.use(express.json())
 dotenv.config();
+const PORT = process.env.PORT || 4000;
 app.use('/', authRoutes);
 app.use('/api/protected', protectedRouter);
 
@@ -69,6 +70,6 @@ app.get('/video', (req, res) => {
   fileStream.pipe(res);
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
   console.log('Server is running on port', process.env.PORT)
 })
