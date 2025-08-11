@@ -1,0 +1,93 @@
+.hianime-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 95%;
+  margin: 2rem auto;
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #222;
+}
+
+.hianime-video {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.hianime-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hianime-progress {
+  height: 6px;
+  background: #444;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #8dde77;
+  border-radius: 3px;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+button:hover {
+  color: #90e270;
+}
+
+input[type='range'] {
+  accent-color: #70b748;
+  cursor: pointer;
+}
+
+.time-info {
+  margin-left: auto;
+  margin-right: 10px;
+  color: #f4f4f4;
+  font-size: 0.9rem;
+  font-family: 'Courier New', monospace;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  transition: background 0.3s;
+}
+
+.time-info:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure the wrapper fills the screen in fullscreen mode */
+.hianime-wrapper:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,39 @@
+
+.player {
+  background-color: #1e1d1d;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.hianime-wrapper {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background-color: #681111;
+  box-shadow: none;
+}
+
+.hianime-wrapper video {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  display: block;
+}
+
+.player h2 {
+  text-align: center;
+  margin: 30px 0 10px;
+  font-size: 24px;
+}
+
+
+.related-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}

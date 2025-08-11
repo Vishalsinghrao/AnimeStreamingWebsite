@@ -1,0 +1,80 @@
+.Smallcard {
+  max-width: 500px;
+  width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  display: flex;
+  font-family: sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.Smallcard:hover {
+  transform: scale(1.02);
+}
+
+.Smallcard img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.Smallcard-content {
+  padding: 10px;
+}
+
+.Smallcard-content h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+/* .Smallcard-content p {
+  margin: 0;
+  color: #706d6d;
+  font-size: 14px;
+} */
+.Smallcard-content p {
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+}
+
+.Button-watch-now{
+    background-color: rgb(133, 221, 98);
+    padding: 10px 15px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.Button-watch-now:hover {
+  background-color: #344c3c
+}
+
+@media (max-width: 600px) {
+  .Smallcard {
+    width: 95%;
+  }
+
+  .Smallcard-content h3 {
+    font-size: 16px;
+  }
+
+  .Smallcard-content p {
+    font-size: 13px;
+  }
+
+  .Button-watch-now {
+    width: 100%;
+    text-align: center;
+  }
+}
