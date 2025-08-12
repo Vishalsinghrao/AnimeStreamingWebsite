@@ -3,6 +3,8 @@ import axios from 'axios';
 import "./ProtectedRoute.css"
 import Navbar from './Navbar';
 import API_BASE_URL from '../config/config';
+import { NavLink } from "react-router-dom"
+
 
 const ProtectedRoute = ({ children }) => {
     const [authChecked, setAuthChecked] = useState(false);
@@ -34,9 +36,9 @@ const ProtectedRoute = ({ children }) => {
                         className="anime-img"
                     />
                     <h2>You need to log in to watch this anime!</h2>
-                    <a href="/login">
+                    <NavLink to={`${API_BASE_URL}/login`}>
                         <button className="login-btn">Login</button>
-                    </a>
+                    </NavLink>
                 </div>
             </div>
             </>
