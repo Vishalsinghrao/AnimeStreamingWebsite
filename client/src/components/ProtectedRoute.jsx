@@ -36,7 +36,7 @@ const ProtectedRoute = ({ children }) => {
                         className="anime-img"
                     />
                     <h2>You need to log in to watch this anime!</h2>
-                    <NavLink to={`${API_BASE_URL}/login`}>
+                    <NavLink to="/login">
                         <button className="login-btn">Login</button>
                     </NavLink>
                 </div>
