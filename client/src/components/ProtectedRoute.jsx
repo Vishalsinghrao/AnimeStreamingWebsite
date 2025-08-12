@@ -3,7 +3,6 @@ import axios from 'axios';
 import "./ProtectedRoute.css"
 import Navbar from './Navbar';
 import API_BASE_URL from '../config/config';
-import { NavLink } from "react-router-dom"
 
 
 const ProtectedRoute = ({ children }) => {
@@ -36,7 +35,7 @@ const ProtectedRoute = ({ children }) => {
                         className="anime-img"
                     />
                     <h2>You need to log in to watch this anime!</h2>
-                    <a href={`${API_BASE_URL}/login`}>
+                    <a href="/login">
                         <button className="login-btn">Login</button>
                     </a>
                 </div>
