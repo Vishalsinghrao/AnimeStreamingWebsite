@@ -12,7 +12,7 @@ import protectedRouter from './routes/Protectedrouter.js';
 
 const app = express()
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: Allowed_origin,
   credentials: true
 }));
 app.use(cookieParser());
