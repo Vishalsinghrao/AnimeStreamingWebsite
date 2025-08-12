@@ -2,6 +2,7 @@ import Smallcard from '../components/Smallcard';
 import './Streaming.css'
 import Footer from '../components/Footer';
 import HiAnimePlayer from '../components/HiAnimePlayer';
+import API_BASE_URL from '../config/config';
 
 const Streaming = () => {
   const cards = [
@@ -41,7 +42,7 @@ const Streaming = () => {
 
     <div className='player'>
 
-      <HiAnimePlayer className='react-player' controls src='http://localhost:4000/video' />
+      <HiAnimePlayer className='react-player' controls src={`${API_BASE_URL}/video`} />
       <h2>Related Anime</h2>
       <div className="related-cards" >
         {cards.map((card, index) => (
