@@ -3,33 +3,36 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { useAuth } from '../components/AuthContext';
 import API_BASE_URL from '../config/config';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [errorMsg, setErrorMsg] = useState('');  // <-- New state for errors
-
   const navigate = useNavigate();
   const { login } = useAuth();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrorMsg('');  
+
     axios.post(`${API_BASE_URL}/login`, { email, password }, { withCredentials: true })
       .then(result => {
         if (result.data === "Success") {
+          toast.success('Login successful! Redirecting...');
           login();
-          navigate('/anime');
+          setTimeout(() => {
+            navigate('/anime');
+          }, 1500);
         } else {
-          setErrorMsg('No such user exists, please Signup.');
+          toast.error('No such user exists, please Signup.');
         }
       })
       .catch(error => {
         if (error.response && error.response.status === 401) {
-          setErrorMsg('Invalid email or password.');
+          toast.error('Invalid email or password.');
         } else {
-          setErrorMsg('An unexpected error occurred. Please try again.');
+          toast.error('An unexpected error occurred. Please try again.');
         }
         console.error(error);
       });
@@ -62,12 +65,12 @@ const Login = () => {
 
         <button type="submit">Log in</button>
 
-        {errorMsg && <p className="error-message">{errorMsg}</p>}
-
         <Link to='/signup'>
           <h4>Not a user? <span>Sign up</span></h4>
         </Link>
       </form>
+
+      <ToastContainer />
     </div>
   );
 };
