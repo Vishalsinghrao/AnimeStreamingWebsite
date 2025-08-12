@@ -29,8 +29,8 @@ router.post('/login', async (req, res) => {
       const token = jwt.sign({ email: user.email }, JWT_SECRET, { expiresIn: '1d' });
       res.cookie('token', token, {
         httpOnly: true,
-        secure: false, // Set to true in production with HTTPS
-        sameSite: 'lax'
+        secure: true, 
+        sameSite: 'none'
       }).json("Success");
     } else {
       res.status(401).json({ error: "Invalid credentials" });
