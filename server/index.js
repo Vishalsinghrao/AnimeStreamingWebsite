@@ -10,9 +10,12 @@ import authRoutes from './routes/auth.js';
 import protectedRouter from './routes/Protectedrouter.js';
 
 
+
 const app = express()
+
+const allowedOrigin = process.env.Allowed_origin;
 app.use(cors({
-  origin: Allowed_origin,
+  origin: allowedOrigin,
   credentials: true
 }));
 app.use(cookieParser());
