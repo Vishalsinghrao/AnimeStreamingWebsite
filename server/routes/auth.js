@@ -13,22 +13,31 @@ router.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
   try {
+    if (!email || !password) {
+      return res.status(400).json({ error: "Email and password are required" });
+    }
+
     const user = await EmployeeModel.findOne({ email });
 
-    if (!user) return res.json("User not found");
+    if (!user) {
+      return res.status(401).json({ error: "User not found" });
+    }
 
     const isMatch = await bcrypt.compare(password, user.password);
 
     if (isMatch) {
       const token = jwt.sign({ email: user.email }, JWT_SECRET, { expiresIn: '1d' });
       res.cookie('token', token, {
-        httpOnly: true
+        httpOnly: true,
+        secure: false, // Set to true in production with HTTPS
+        sameSite: 'lax'
       }).json("Success");
     } else {
-      res.json("Invalid credentials");
+      res.status(401).json({ error: "Invalid credentials" });
     }
   } catch (err) {
-    res.status(500).json({ error: "Login failed", details: err });
+    console.error('Login error:', err);
+    res.status(500).json({ error: "Login failed", message: err.message });
   }
 });
 
