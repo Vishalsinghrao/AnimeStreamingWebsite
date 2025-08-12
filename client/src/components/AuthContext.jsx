@@ -1,6 +1,7 @@
 
 import React, { createContext, useState,useEffect, useContext } from 'react';
 import axios from 'axios';
+import API_BASE_URL from '../config/config';
 axios.defaults.withCredentials = true; 
 
 
@@ -11,7 +12,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = () => setIsLoggedIn(true);
    const logout = () => {
-  axios.post('http://localhost:4000/logout', {}, { withCredentials: true })
+  axios.post(`${API_BASE_URL}/logout`, {}, { withCredentials: true })
     .then(() => {
       setIsLoggedIn(false);
     })
@@ -22,7 +23,7 @@ export const AuthProvider = ({ children }) => {
 };
 
     useEffect(() => {
-    axios.get('http://localhost:4000/check-auth', { withCredentials: true })
+    axios.get(`${API_BASE_URL}/check-auth`, { withCredentials: true })
       .then(res => {
         if (res.data.isLoggedIn) {
           setIsLoggedIn(true);
