@@ -31,37 +31,56 @@ ZORO.to is a responsive anime streaming web app built using the MERN stack. It a
 - JWT for Authentication
 - Git & GitHub for version control
 
-**Home-page**
-
+**🏠 Home Page**
+<br>
+<br>
 
 <img width="1920" height="1080" alt="Screenshot 2025-07-12 021434" src="https://github.com/user-attachments/assets/d753f232-de94-4bbd-8c49-8f9e9baa34d9" />
 
+<br>
+<br>
 
-**Anime-page**
-
+**🎭 Anime Page**
+<br>
+<br>
 
 <img width="1920" height="1080" alt="Screenshot 2025-07-12 021455" src="https://github.com/user-attachments/assets/8cba7722-5b52-41c3-9c14-3d55c9215278" />
 
+<br>
+<br>
 
-**Top Airing-page**
-
+**📡 Top Airing-page**
+<br>
+<br>
 
 <img width="1920" height="1080" alt="Screenshot 2025-07-12 021509" src="https://github.com/user-attachments/assets/ac81b3f8-6c67-4ab0-bc86-991ccafbbd71" />
 
+<br>
+<br>
 
-**Protected route**
+**🔒 Protected Route**
+<br>
+<br>
 
 
 <img width="1920" height="1080" alt="Screenshot 2025-07-12 021522" src="https://github.com/user-attachments/assets/195e376c-1c4c-4b4c-9c4f-f477c65ddbfe" />
+<br>
+<br>
 
 
-**Login-page**
+**🔑 Login Page**
+<br>
+<br>
 
 
 <img width="1876" height="834" alt="Screenshot 2025-07-12 022105" src="https://github.com/user-attachments/assets/3a16c4ef-c29e-4f98-a533-cb5b79dc4908" />
+<br>
+<br>
 
 
-**Streaming-page**
+**📺 Streaming Page**
+<br>
+<br>
 
 
 <img width="1920" height="1080" alt="Screenshot 2025-07-12 021547" src="https://github.com/user-attachments/assets/1d21bfcd-7b98-4ed5-81e6-a9f8d3e77b57" />
