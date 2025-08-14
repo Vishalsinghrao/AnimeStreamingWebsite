@@ -2,6 +2,9 @@
 
 ZORO.to is a responsive anime streaming web app built using the MERN stack. It allows users to explore anime, stream trailers, and manage user authentication.
 
+## 🌐 Live Demo
+🔗 [Click here to visit the website](https://animestreamingwebsite-0cl9.onrender.com/anime)
+
 ## 🔥 Features
 
 - 🌟 Display Top Anime using Jikan API
