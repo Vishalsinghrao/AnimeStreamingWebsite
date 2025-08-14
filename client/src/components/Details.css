@@ -6,3 +6,10 @@ h2{
 p{
     padding: 10px;
 }
+
+@media (max-width: 480px){
+    h2{
+        position: relative;
+        margin-top: 1vh;
+    }
+}

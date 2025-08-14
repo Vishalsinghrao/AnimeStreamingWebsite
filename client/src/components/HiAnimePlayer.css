@@ -82,7 +82,54 @@ input[type='range'] {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Ensure the wrapper fills the screen in fullscreen mode */
+.hianime-wrapper:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hianime-wrapper {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .hianime-controls {
+    padding: 5px;
+  }
+  
+  .control-row {
+    gap: 5px;
+  }
+  
+  button {
+    font-size: 1rem;
+  }
+  
+  .time-info {
+    font-size: 0.7rem;
+    padding: 1px 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hianime-wrapper {
+    max-width: 100%;
+  }
+  
+  .hianime-controls {
+    padding: 3px;
+  }
+  
+  button {
+    font-size: 0.9rem;
+  }
+}
+
 .hianime-wrapper:fullscreen {
   width: 100vw;
   height: 100vh;

@@ -37,3 +37,39 @@
   gap: 20px;
   padding: 20px;
 }
+
+@media (max-width: 768px) {
+  .hianime-wrapper {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .hianime-wrapper video {
+    max-height: 50vh;
+    object-fit: contain;
+  }
+  
+  .player h2 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+  }
+  
+  .related-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hianime-wrapper video {
+    max-height: 40vh;
+  }
+  
+  .player h2 {
+    font-size: 18px;
+    margin: 15px 0 5px;
+  }
+  
+}

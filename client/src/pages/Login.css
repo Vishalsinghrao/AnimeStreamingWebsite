@@ -56,13 +56,19 @@ h4 span{
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .login-form {
-    width: 90%;
-    padding: 20px;
+    width: 70%;
+    padding: 30px;
+    align-items: center;
   }
 
   .login-form h2 {
     font-size: 1.5rem;
+  }
+
+  .login-form button{
+    width: 100%;
+    align-items: center;
   }
 }
